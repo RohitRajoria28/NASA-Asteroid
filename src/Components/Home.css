@@ -1,0 +1,111 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+     
+  }
+  
+  /* .line {
+    height: 1px;
+    width: 50%;
+    background-color: black;
+    margin: 10px 0;
+  } */
+  .asteroidd{
+    margin-top: 20vh;
+    color: rgb(231, 50, 134);
+  }
+   .line2{
+     color: rgb(189, 65, 185);
+   }
+   .asteroid {
+    width: 60px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(45deg, #b98686 25%, transparent 25%, transparent 75%, #874545 75%, #d53c3c);
+    box-shadow: 0 0 10px rgba(250, 2, 2, 0.5);
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    animation: asteroid 3s steps(10, end) infinite;
+  }
+  
+  @keyframes asteroid {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate(120vw, 100vh) rotate(360deg);
+    }
+  }
+  
+  .asteroid2 {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px 20px 0 0;
+    background: #b5b5b5;
+    border: 1px solid #5a5a5a;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+   left : -40px;
+    top: -20px;
+    animation: asteroid2 20s steps(10, end) infinite;
+  }
+  
+  @keyframes asteroid2 {
+    0% {
+      transform: translate(0, 0) rotate(5deg);
+    }
+    100% {
+      transform: translate(120vw, 100vh) rotate(360deg);
+    }
+  }
+  
+
+  button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #007bff;
+  }
+  
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 5px #0077cc;
+  }
+  
